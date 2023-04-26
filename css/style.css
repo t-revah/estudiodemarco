@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-----------------------------------------------------------------INDEX-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------INDEX-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------INDEX-----------------------------------------------------------------*/
+
+.principal{
+    display: grid;
+    height: 100vh; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                "dra dra dra quien" 
+                "dra dra dra info";
+}
+
+@media (max-width: 900px){ 
+        .titulo{
+        color: rgb(127, 141, 127);
+        font-size: 2rem;
+        }
+    }
+
+.titulo {
+    color: rgb(0, 73, 0);
+    font-size: 8rem;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: left;
+    display: block;
+    padding: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.dra{
+    grid-area: dra;
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+}
+
+.dra::before{
+    content: "";
+    background-image: url(../img/abogados-5.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.quien{
+    grid-area: quien;
+    flex: 1; 
+    background-color: rgb(0, 73, 0);
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.imagen{
+    grid-area: imagen;
+    background-color: rgb(0, 73, 0);
+    width: 100%;
+    position: absolute;
+    padding: 1.5rem;
+ }
+
+.info{
+    grid-area: info;
+    background-color: rgb(0, 73, 0);
+    padding: 4rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2-index{
+    padding-top: 7rem;
+    color: rgb(231, 225, 200);
+}
+
+.link{
+    text-decoration: none;
+    background-color: rgb(231, 225, 200);
+    color: rgb(0, 73, 0);
+    font-weight: bold;
+    padding: 1rem;
+    display: inline-block;
+    align-items: center;
+}
+
+.link:hover{ /* pasas por arriba del link y se ponen las letras de un color*/
+    color:rgb(16, 121, 39);
+    background-color: gold;
+}
+
+.p::first-letter{
+    font-size: 2rem;
+}
+
+
+
+/*--------------------------------------------------------------ABOGADO.HTML--------------------------------------------------------------*/
+/*--------------------------------------------------------------ABOGADO.HTML--------------------------------------------------------------*/
+/*--------------------------------------------------------------ABOGADO.HTML--------------------------------------------------------------*/
+.main-abogado{
+    position: relative;
+    height: 600px;
+}
+
+.inicio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(209, 195, 195, 0.7);
+    padding: 50px;
+    color: rgb(16, 121, 39);
+    font-size: 3rem;
+    display: inline-block;
+}
+
+header {
+    height: 80px;
+    background-color: rgb(0, 73, 0);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+header .img{
+    float: left;
+}
+
+.img{
+    width: 3rem;
+    height: 100%;
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+    max-width: 100%;
+    animation-delay: 1.2s;
+   
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: rgb(231, 225, 200);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(16, 121, 39);
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: disc;
+    
+}
+
+li{
+    text-align: center;
+}
+
+.martillo{
+    text-align: left;
+    height: 100%;
+    width: 100%;
+}
+
+.pabogado {
+    line-height: 3;
+    text-align: left;
+    color: rgb(231, 225, 200);
+    text-align: center;
+}
+
+.llamar {
+    background-color: rgb(0, 73, 0);
+    color: rgb(231, 225, 200);
+    padding: 2rem;
+    text-align: center;
+}
+
+.llamar a:hover {
+    background-color: rgb(231, 225, 200);
+    color: rgb(231, 225, 200);
+}
+
+.boton{
+    color: rgb(231, 225, 200);
+}
+
+.boton a:hover{
+    background-color: rgb(16, 121, 39);
+}
+
+footer div h1, footer div h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------------------------CONTACTO.HTML-------------------------------------------------------------*/
+/*-------------------------------------------------------------CONTACTO.HTML-------------------------------------------------------------*/
+/*-------------------------------------------------------------CONTACTO.HTML-------------------------------------------------------------*/
+
+.contacto{
+    background-color: rgb(16, 121, 39);
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+.parrafo-contacto {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rg;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #ccc;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  .formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+/*-------------------------------------------------------------SERVICIOS.HTML-------------------------------------------------------------*/
+/*-------------------------------------------------------------SERVICIOS.HTML-------------------------------------------------------------*/
+/*-------------------------------------------------------------SERVICIOS.HTML-------------------------------------------------------------*/
+
+.nav-servicios{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 60px;
+    z-index: 100;
+    text-align: center;
+    background-color: rgb(0, 73, 0);
+    margin-left: 1rem;
+}
+
+.ul-servicios{
+    list-style: none;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-servicios{
+    background-color: rgb(0,73,0);
+    padding: 5rem;
+}
+
+.h1-servicios{
+    margin-top: 0;
+    text-align: center;
+    color: rgb(231, 225, 200);
+}
+
+.h2-servicios{
+    color: rgb(0, 73, 0);
+}
+
+.cards{
+    display: flex;
+    gap: 2rem;
+  
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    flex: 1; /*para que todas las imagenes tengan el mismo tamano */
+    background-color: rgb(231, 225, 200);
+    text-align: center;
+}
+
+.card-image{
+    width: 100%;
+    flex: 1;
+    
+}
+
+.card-info{
+    padding: 2rem;
+    display: flex; /* para darle espaciado entre el parrafo el titulo y el boton*/
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card-link{
+    text-decoration: none;
+    background-color: rgb(0,73,0);
+    color: white;
+    padding: 1rem;
+    display: inline-block; /*para uqe no quede el boton encima del texto*/
+    margin-top: auto;
+    text-align: center;
+}
+ 
+.card-link:hover{ /* pasas por arriba del link y se ponen las letras de un color*/
+    color:yellow;
+    background-color: darkblue;
+}
+
+.card-link-mensaje:visited{ /*el que ya visistaste*/
+    color: violet;
+}
+
+@media (max-width: 800px){
+    .cards{
+        flex-direction: column;
+    }
+}
