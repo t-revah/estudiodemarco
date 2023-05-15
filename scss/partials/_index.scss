@@ -1,0 +1,97 @@
+.principal{
+    display: grid;
+    height: 100vh; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                "dra dra dra quien" 
+                "dra dra dra info";
+}
+
+@media (max-width: 900px){ 
+        .titulo{
+        color: rgb(127, 141, 127);
+        font-size: 2rem;
+        }
+    }
+
+.titulo {
+    color: rgb(0, 73, 0);
+    font-size: 8rem;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: left;
+    display: block;
+    padding: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.dra{
+    grid-area: dra;
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+
+    ::before{
+    content: "";
+    background-image: url(../img/abogados-5.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+}
+
+.quien{
+    grid-area: quien;
+    flex: 1; 
+    background-color: $mainColor;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.imagen{
+    grid-area: imagen;
+    background-color: $mainColor;
+    width: 100%;
+    position: absolute;
+    padding: 1.5rem;
+ }
+
+.info{
+    grid-area: info;
+    background-color: $mainColor;
+    padding: 4rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2-index{
+    padding-top: 7rem;
+    color: $secundaryColor;
+}
+
+.link{
+    text-decoration: none;
+    background-color: $secundaryColor;
+    color: $mainColor;
+    font-weight: bold;
+    padding: 1rem;
+    display: inline-block;
+    align-items: center;
+
+    :hover{
+        color:rgb(16, 121, 39);
+        background-color: gold;
+    }
+}
+

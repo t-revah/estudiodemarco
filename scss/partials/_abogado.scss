@@ -1,0 +1,113 @@
+.main-abogado{
+    position: relative;
+    height: 600px;
+}
+
+.inicio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(209, 195, 195, 0.7);
+    padding: 50px;
+    color: rgb(16, 121, 39);
+    font-size: 3rem;
+    display: inline-block;
+}
+
+header {
+    height: 80px;
+    background-color: $mainColor;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 0;
+
+    .img{
+        float: left;
+    }
+}
+
+.img{
+    width: 3rem;
+    height: 100%;
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+    max-width: 100%;
+    animation-delay: 1.2s;
+
+    li{
+        margin-right: 1rem;
+    }
+
+    a {
+        color: rgb(231, 225, 200);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: all 0.2s ease-in-out;
+
+        :hover{
+            color: rgb(16, 121, 39);
+        }
+    }
+}
+
+.menu {
+    list-style: none;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: disc;
+    
+}
+
+li{
+    text-align: center;
+}
+
+.martillo{
+    text-align: left;
+    height: 100%;
+    width: 100%;
+}
+
+.pabogado {
+    line-height: 3;
+    text-align: left;
+    color: rgb(231, 225, 200);
+    text-align: center;
+}
+
+.llamar {
+    background-color: rgb(0, 73, 0);
+    color: rgb(231, 225, 200);
+    padding: 2rem;
+    text-align: center;
+
+    a:hover {
+        background-color: $secundaryColor;
+        color: $secundaryColor;
+    }
+
+}
+
+.boton{
+    color: $secundaryColor;
+
+    a:hover{
+        background-color: rgb(16, 121, 39);
+    }
+
+}
+
+footer div h1, footer div h2 {
+    margin: 0;
+    padding: 0;
+}

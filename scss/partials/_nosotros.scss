@@ -1,0 +1,58 @@
+@mixin padding($top,$bottom,$padding){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+.nosotros{
+    background-color: $secundaryColor;
+    @include padding(2rem,2rem,1rem )
+}
+
+h1{
+    color: bisque;
+}
+
+.header{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu-ancho{
+    justify-content: end; /* para que el menu se vaya a la derecha*/
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.titulo-nosotros{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.p-nosotros{
+    text-align: justify;
+}
+
+.footer-nosotros{
+    display: flex;
+    background-color: $mainColor;
+    padding: 4rem;
+
+    .iconos{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        fab{
+            padding: 1rem;
+        }
+    }
+}
+
+
+
