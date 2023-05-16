@@ -25,6 +25,7 @@
     letter-spacing: 0.5rem;
 }
 
+
 .dra{
     grid-area: dra;
     display: grid;
@@ -63,6 +64,23 @@
     width: 100%;
     position: absolute;
     padding: 1.5rem;
+    animation-name: tiembla;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+ }
+
+ @keyframes tiembla{
+    0% {
+        width: 200px;
+        height: 200px;
+    }
+
+    100%{
+        width: 350px;
+        height: 350px;
+    }
  }
 
 .info{

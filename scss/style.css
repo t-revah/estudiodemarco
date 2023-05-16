@@ -76,8 +76,22 @@
   width: 100%;
   position: absolute;
   padding: 1.5rem;
+  animation-name: tiembla;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
+@keyframes tiembla {
+  0% {
+    width: 200px;
+    height: 200px;
+  }
+  100% {
+    width: 350px;
+    height: 350px;
+  }
+}
 .info {
   grid-area: info;
   background-color: rgb(0, 73, 0);
@@ -122,12 +136,24 @@
   color: rgb(16, 121, 39);
   font-size: 3rem;
   display: inline-block;
+  animation-name: tiembla2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-.inicio:hover {
-  transform: rotateZ(60deg);
+@keyframes tiembla2 {
+  0% {
+    width: 500px;
+    height: 500px;
+    transform-origin: center center;
+  }
+  100% {
+    width: 500px;
+    height: 550px;
+    transform-origin: center center;
+  }
 }
-
 header {
   height: 80px;
   background-color: rgb(0, 73, 0);
@@ -319,11 +345,12 @@ h1 {
 }
 .cards .card1 :hover, .cards .card3 :hover, .cards .card2 :hover {
   transform: rotateZ(360deg);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .card-image {
   width: 100%;
   flex: 1;
+  transition: 2s;
 }
 
 .card-info {
