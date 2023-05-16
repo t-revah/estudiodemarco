@@ -51,6 +51,12 @@
         flex: 1; 
         background-color: $secundaryColor;
         text-align: center;
+        
+        :hover{
+            transform: rotateZ(360deg);
+            transform: scale(1.1);
+        }
+
     }
     
     .card2 {
