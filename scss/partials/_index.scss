@@ -8,12 +8,7 @@
                 "dra dra dra info";
 }
 
-@media (max-width: 900px){ 
-        .titulo{
-        color: rgb(127, 141, 127);
-        font-size: 2rem;
-        }
-    }
+
 
 .titulo {
     color: rgb(0, 73, 0);
@@ -25,12 +20,20 @@
     letter-spacing: 0.5rem;
 }
 
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 4rem;
+    }
+}
+
 
 .dra{
     grid-area: dra;
     display: grid;
     justify-content: center;
     align-content: center; 
+    position: relative;
+
 
     ::before{
     content: "";
@@ -73,13 +76,13 @@
 
  @keyframes tiembla{
     0% {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
 
     100%{
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
  }
 

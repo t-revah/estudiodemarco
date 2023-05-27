@@ -12,22 +12,6 @@ h1{
     color: bisque;
 }
 
-.header{
-    display: flex;
-}
-
-.menu{
-    display: flex;
-}
-
-.menu-ancho{
-    justify-content: end; /* para que el menu se vaya a la derecha*/
-}
-
-.navbar {
-    background-color: transparent !important;
-}
-
 .titulo-nosotros{
     text-align: center;
     font-weight: bold;
@@ -52,6 +36,7 @@ h1{
         }
     }
 }
+
 
 
 

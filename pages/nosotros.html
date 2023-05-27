@@ -1,86 +1,87 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title> Acerca de Nosotros </title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
 	<link rel="stylesheet" href="../scss/style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- Iconos -->
+
 </head>
 	
-	<body class="body-nosotros">
-		<header class="header-nosotros">
+<body class="body-nosotros">
 
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	<header class="encabezado">
+
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
 				
-				<div class="container-fluid">
-				  <a class="navbar-brand" href="#"></a>
+				<a class="navbar-brand" href="#"></a>
 
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
-				  </button>
+				  </button> <!-- Hamburguesa boton -->
 
-				  <div class="collapse navbar-collapse" id="navbarText">
+				<div class="collapse navbar-collapse" id="navbarText">
 
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li><a href="../index.html">Inicio</a></li>
-                		<li><a href="servicios.html">Servicios</a></li>
-               	 		<li><a href="nosotros.html"">Nosotros</a></li>
-               	 		<li><a href="contacto.html">Contacto</a></li>
-					</ul>
+						<li class="nav-item"><a href="../index.html">Inicio</a></li>
+						<li class="nav-item"><a href="servicios.html">Servicios</a></li>
+						<li class="nav-item"><a href="nosotros.html"">Nosotros</a></li>
+               	 		<li class="nav-item"><a href="contacto.html">Contacto</a></li>
+					</ul> 
 
 					<span class="navbar-text">
 						De Marco
 					</span>
 
-				  </div>
 				</div>
-			</nav>
+			</div>
+		</nav>
+	</header>
 
-		</header>
+	
 
-        <main class="main-nosotros">
+
 			<section class="nosotros">
 				<div class="container">
 
 					<h1 class="text-center mb-5"> </h1>
 					<div class="row"> 
 		
-						<div class="col-md-4"> <!-- con col-sm-6, sumado al col-12, (sacado de la pagina de bootstrap) haces responsive -->
-														<!-- pero solamente con col-md basta par hacerlo responsive obviamente a otra medida -->
-														<!-- https://getbootstrap.com/docs/5.3/layout/breakpoints/ -->
-							<h2 class="titulo-nosotros"> Laura Martinez </h2>
-							<p class="p-nosotros"> Laura es una abogada de 35 años con más de 10 años de experiencia en derecho corporativo. Es una experta en derecho de sociedades y fusiones y adquisiciones, y ha asesorado a empresas de diversos sectores, desde startups hasta grandes corporaciones. Tiene una maestría en derecho de negocios de una prestigiosa universidad y es conocida por su habilidad para resolver problemas de manera creativa y estratégica. Laura es una abogada muy enfocada en los resultados y siempre busca las soluciones más eficaces para sus clientes.</p>
+						<div class="col-md-4">   
+							<h2 class="titulo-nosotros"> Pedro Martinez </h2>
+							<p class="p-nosotros"> Pedro es una abogado de 35 años con más de 10 años de experiencia en derecho corporativo. Es una experto en derecho de sociedades y fusiones y adquisiciones, y ha asesorado a empresas de diversos sectores, desde startups hasta grandes corporaciones. Tiene una maestría en derecho de negocios de una prestigiosa universidad y es conocida por su habilidad para resolver problemas de manera creativa y estratégica. Laura es una abogada muy enfocada en los resultados y siempre busca las soluciones más eficaces para sus clientes.</p>
+							<div >
+								<img src="./img2/abogado1.webp" class="img-fluid" alt="">
+							</div>
 						</div>
-			
-						<div class="col-md-4"> <!-- para poner offset se puede reemplazando el col -->
+
+						<div class="col-md-4"> 
 							<h2 class="titulo-nosotros"> Javier Perez </h2>
 							<p class="p-nosotros"> Javier es un abogado penalista de 45 años con una amplia experiencia en derecho penal. Ha trabajado en casos complejos de delitos financieros, lavado de dinero y corrupción. También ha asesorado a clientes en casos de delitos menores y ha defendido a clientes en juicios penales. Javier es conocido por su habilidad para analizar y desentrañar casos complicados y por su enfoque incansable en defender los derechos de sus clientes. Además, es un orador persuasivo y ha ganado numerosos casos gracias a su capacidad para argumentar de manera efectiva ante los tribunales. </p>
+							<div>
+								<img src="./img2/abogado2.webp" class="img-fluid" alt="">
+							</div>
+								
 						</div>
-							
+
 						<div class="col-md-4">
 							<h2 class="titulo-nosotros"> Ana Rodriguez </h2>
 							<p class="p-nosotros"> Ana es una abogada de derechos civiles de 30 años con una fuerte pasión por defender los derechos humanos. Ha trabajado en casos relacionados con discriminación, libertad de expresión, derechos de la mujer y derechos de los inmigrantes. También ha representado a víctimas de violencia doméstica y ha ayudado a obtener órdenes de protección para ellas. Ana es conocida por su compromiso con la justicia social y su empatía con sus clientes. Siempre se esfuerza por hacer que la ley funcione para las personas a las que representa y para mejorar las condiciones de vida de las personas más vulnerables.</p>
-						</div>   
-						
-					</div>
+							<div>
+								<img src="./img2/abogada3.webp" class="img-fluid" alt="">
+							</div>
+						</div>  
 
-					<div class="row">
-						<div class="col-md-4">
-							<img src="./img2/abogado1.webp" class="img-fluid" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="./img2/abogado2.webp" class="img-fluid" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="./img2/abogada3.webp" class="img-fluid" alt="">
-						</div>
-					</div>
+					</div>				
 				</div>
-
-			
 			</section>
 
-		</main>
+
 
 		<footer class="bg-dark text light p-4">
 
@@ -100,11 +101,9 @@
 					</div>
 				</div>
 			</div>
-			<!--  -->
-
 			
 		</footer>
 
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-	</body>
+		</body>
 </html>
