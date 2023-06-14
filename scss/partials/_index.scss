@@ -8,8 +8,6 @@
                 "dra dra dra info";
 }
 
-
-
 .titulo {
     color: rgb(0, 73, 0);
     font-size: 8rem;
@@ -20,9 +18,39 @@
     letter-spacing: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    .info {
+      display: none;
+    }
+  }
+
+@media (max-width: 800px) {
     .titulo {
         font-size: 4rem;
+    }  
+     .h2-index {
+    font-size: 3.2rem;
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .titulo{
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        letter-spacing: -0.5rem;     
+    }
+    
+    .info{
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .quien{
+        padding-top: 1rem;
     }
 }
 
@@ -59,32 +87,36 @@
     align-content: center;
     gap: 1rem;
     position: relative;
+    padding: 5rem;
 }
 
 .imagen{
     grid-area: imagen;
     background-color: $mainColor;
     width: 100%;
+    height: auto;
     position: absolute;
     padding: 1.5rem;
-    animation-name: tiembla;
+
+    /*animation-name: tiembla;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    
+    animation-direction: alternate;*/   
  }
 
- @keyframes tiembla{
+
+
+/* @keyframes tiembla{
     0% {
         width: 100px;
         height: 100px;
     }
 
     100%{
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
- }
+ } */
 
 .info{
     grid-area: info;
@@ -116,3 +148,6 @@
     }
 }
 
+.p-index{
+    color: $secundaryColor;
+}
